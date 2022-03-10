@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書曼的旅遊相簿</title>
+    <style type="text/css">
+        body{        
+            background-color: #333333;
+        }
+        #bgc{
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            margin: 0 auto;
+            width: 1024px;
+            height: 768px;
+            background-color: #FFFFCC;
+        }
+        #left{
+            width: 150px;
+        }
+        #right{
+            width: 874px;
+        }
+        .center{
+            display: block;
+            margin: 0 auto;
+        }
+        #imfo{
+            text-align: center;
+            font-size: 12px;
+            font-weight: bolder;
+            font-family: '新細明體';
+            color: #FF0000;
+        }
+        #marq{
+            display: flex;
+            /* 水平置中 */
+            margin: auto;
+            height: 50px;
+            width: 500px;
+            padding: 0px;
+            font-size: 24px;
+            font-family: '標楷體';
+            font-weight: bolder;
+            /* 垂直置中 */
+            align-items: center;
+            color: #FF0000;
+        }
+        #right iframe{
+            padding: 36px;
+            height: 640px;
+            width: 802px;
+        }
+        .text{
+            cursor: default;
+            height: 20px;
+            font-family: '標楷體';
+            font-size: 18px;
+            -webkit-text-fill-color: transparent;
+        }
+        #t1{
+            -webkit-text-stroke: 1px #FF0000;
+        }
+        #t3{
+            -webkit-text-stroke: 1px;
+        }
+        #t4{
+            -webkit-text-stroke: 1px #0000FF;
+            animation: color-change1 4s infinite;
+        }
+        #t5{
+            -webkit-text-stroke: 1px #00FF00;
+            animation: color-change2 4s infinite;
+        }
+        #t6{
+            -webkit-text-stroke: 1px #00FFFF;
+            animation: color-change3 4s infinite;
+        }
+        #t7{
+            -webkit-text-stroke: 1px #FF00FF;
+            animation: color-change4 4s infinite;
+        }
+        @keyframes color-change1 {
+            25%{
+                -webkit-text-stroke:1px #FF00FF;
+            }
+            50%{
+                -webkit-text-stroke:1px #00FFFF;
+            }
+            75%{
+                -webkit-text-stroke:1px #00FF00;
+            }
+        }
+        @keyframes color-change2 {
+            25%{
+                -webkit-text-stroke:1px #0000FF;
+            }
+            50%{
+                -webkit-text-stroke:1px #FF00FF;
+            }
+            75%{
+                -webkit-text-stroke:1px #00FFFF;
+            }
+        }
+        @keyframes color-change3 {
+            25%{
+                -webkit-text-stroke:1px #00FF00;
+            }
+            50%{
+                -webkit-text-stroke:1px #0000FF;
+            }
+            75%{
+                -webkit-text-stroke:1px #FF00FF;
+            }
+        }
+        @keyframes color-change4 {
+            25%{
+                -webkit-text-stroke:1px #00FFFF;
+            }
+            50%{
+                -webkit-text-stroke:1px #00FF00;
+            }
+            75%{
+                -webkit-text-stroke:1px #0000FF;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bgc">
+        <div id="left">
+            <div class="text" title="書曼的旅遊相簿">
+                <span id="t1">書曼</span><span id="t3">的</span><span id="t4">旅</span><span id="t5">遊</span><span id="t6">相</span><span id="t7">簿</span>
+            </div>
+            <div><img src="./images/0507.jpg" title="書曼" class="center"></div><br>
+            <div><img src="./images/0501b.gif" onmouseover="this.src='./images/0501r.gif'" onmouseout="this.src='./images/0501b.gif'" title="金門逍遙遊" class="center"></div>
+            <div><img src="./images/0502b.gif" onmouseover="this.src='./images/0502r.gif'" onmouseout="this.src='./images/0502b.gif'" title="卡蹓到馬祖" class="center"></div>
+            <div><img src="./images/0503b.gif" onmouseover="this.src='./images/0503r.gif'" onmouseout="this.src='./images/0503b.gif'" title="踏浪澎湖行" class="center"></div>
+            <div><img src="./images/0504b.gif" onmouseover="this.src='./images/0504r.gif'" onmouseout="this.src='./images/0504b.gif'" title="綠島唱夜曲" class="center"></div>
+            <div><a href="./album5/album5.html" target="main"><img src="./images/0505b.gif" onmouseover="this.src='./images/0505r.gif'" onmouseout="this.src='./images/0505b.gif'" title="蘭嶼賞魚去" class="center"></a></div><br>
+            <div id="imfo">日期：2022/02/22<br>維護：{name}</div><br>
+            <div><a href="./index.html" target="_top"><img src="./images/0506b.gif" onmouseover="this.src='./images/0506r.gif'" onmouseout="this.src='./images/0506b.gif'" title="回首頁" class="center"></a></div>
+            <!-- autoplay自動播放 loop循環播放 muted靜音 controls音訊控制面板 -->
+            <audio src="./music/0501.mp3" autoplay loop></audio>
+        </div>
+        <div id="right">
+            <marquee id="marq">歡迎來到書曼的旅遊相簿，本網站有我的旅遊影像紀錄介紹耶！</marquee>
+            <iframe src="./others/main.html" frameborder="0" name="main"></iframe>
+        </div>
+    </div>
+</body>
+</html>

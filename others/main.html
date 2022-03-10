@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 610px;
+            height: 300px;
+            background-color: #FFFFCC;
+        }
+        .bg,.photo{
+            position: absolute;
+        }
+        .bg img{
+            width: 191px;
+            height: 151px;
+        }
+        #bgimg1{
+            z-index: -100;
+            margin-left: 10px;
+        }
+        #bgimg2{
+            z-index: -96;
+            margin-left: 210px;
+        }
+        #bgimg3{
+            margin-left: 410px;
+        }
+        #bgimg4{
+            z-index: -98;
+            margin-top: 135px;
+            margin-left: 75px;
+        }
+        #bgimg5{
+            z-index: -93;
+            margin-top: 135px;
+            margin-left: 300px;
+        }
+        .photo{
+            width: 178px;
+            height: 129px;
+        }
+        .photo img{
+            width: 178px;
+            height: 129px;
+        }
+        #photo1{
+            z-index: -99;
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+        #photo2{
+            z-index: -95;
+            margin-top: 5px;
+            margin-left: 216px;
+        }
+        #photo3{
+            z-index: 1;
+            margin-top: 5px;
+            margin-left: 416px;
+        }
+        #photo4{
+            z-index: -97;
+            margin-top: 140px;
+            margin-left: 80px;
+        }
+        #photo5{
+            z-index: -90;
+            margin-top: 140px;
+            margin-left: 306px;
+        }
+        #position1{
+            z-index: -97;
+        }
+        #position2{
+            z-index: -90;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg" id="bgimg1">
+        <img src="../images/0509.jpg" alt="">
+    </div>
+    <div class="photo">
+        <img src="../images/0511.jpg" alt="" id="photo1">
+    </div>
+
+    <div class="bg" id="bgimg2">
+        <img src="../images/0509.jpg" alt="">
+    </div>
+    <div class="photo">
+        <img src="../images/0531.jpg" alt=""  id="photo2">
+    </div>
+
+    <div class="bg" id="bgimg3">
+        <a href="../album5/album5.html" target="main"><img src="../images/0509.jpg" alt=""></a>
+    </div>
+    <div class="photo">
+        <a href="../album5/album5.html" target="main"><img src="../images/0551.jpg" alt=""  id="photo3"></a>
+    </div>
+
+    <div class="bg" id="bgimg4">
+        <img src="../images/0509.jpg" alt="">
+    </div>
+    <div class="photo" id="position1">
+        <img src="../images/0521.jpg" alt=""  id="photo4">
+    </div>
+
+    <div class="bg" id="bgimg5">
+        <img src="../images/0509.jpg" alt="">
+    </div>
+    <div class="photo" id="position2">
+        <img src="../images/0541.jpg" alt=""  id="photo5">
+    </div>
+
+</body>
+</html>
